@@ -16,7 +16,7 @@
       <div class="md-layout-item">
         <md-field>
           <label>token</label>
-          <md-input v-model="githubInfo.token"></md-input>
+          <md-input v-model="githubInfo.token" type="password"></md-input>
         </md-field>
       </div>
       <div class="md-layout-item">

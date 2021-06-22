@@ -2,6 +2,7 @@ import {GraphQLClient, gql} from 'graphql-request'
 
 const endpoint = 'https://api.github.com/graphql'
 
+// eslint-disable-next-line no-unused-vars
 function createClient(token) {
     return new GraphQLClient(endpoint, {
         headers: {

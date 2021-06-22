@@ -2,10 +2,10 @@
 
 const numberOfVersions = 50
 const versionsByPackageName = {
-    'a.name': createPackageVersions('a.name'),
-    'b.name': createPackageVersions('b.name'),
-    'c.name': createPackageVersions('c.name'),
-    'd.name': createPackageVersions('d.name'),
+    'packageA': createPackageVersions('packageA'),
+    'packageB': createPackageVersions('packageB'),
+    'packageC': createPackageVersions('packageC'),
+    'packageD': createPackageVersions('packageD'),
 }
 
 // eslint-disable-next-line no-unused-vars
@@ -54,7 +54,7 @@ function createPackageVersions(packageName) {
     for (let i = 0; i < numberOfVersions; i++) {
         result.push({
             id: packageName + "_" + i,
-            version: "version " + i,
+            version: "1.0." + i,
         })
     }
     return result

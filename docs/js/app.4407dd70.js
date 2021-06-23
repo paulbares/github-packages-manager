@@ -196,15 +196,15 @@ var es_promise_finally = __webpack_require__("a79d");
 // EXTERNAL MODULE: ./node_modules/vue/dist/vue.runtime.esm.js
 var vue_runtime_esm = __webpack_require__("2b0e");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"11a305aa-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=34a429e7&
-var Appvue_type_template_id_34a429e7_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('div',{staticClass:"md-layout md-gutter"},[_c('div',{staticClass:"md-layout-item"},[_c('md-field',[_c('label',[_vm._v("organization")]),_c('md-input',{model:{value:(_vm.githubInfo.organization),callback:function ($$v) {_vm.$set(_vm.githubInfo, "organization", $$v)},expression:"githubInfo.organization"}})],1)],1),_c('div',{staticClass:"md-layout-item"},[_c('md-field',[_c('label',[_vm._v("repository")]),_c('md-input',{model:{value:(_vm.githubInfo.repository),callback:function ($$v) {_vm.$set(_vm.githubInfo, "repository", $$v)},expression:"githubInfo.repository"}})],1)],1),_c('div',{staticClass:"md-layout-item"},[_c('md-field',[_c('label',[_vm._v("token")]),_c('md-input',{attrs:{"type":"password"},model:{value:(_vm.githubInfo.token),callback:function ($$v) {_vm.$set(_vm.githubInfo, "token", $$v)},expression:"githubInfo.token"}})],1)],1),_c('div',{staticClass:"md-layout-item"},[_c('md-field',[_c('label',[_vm._v("Page size")]),_c('md-input',{attrs:{"type":"number","maxlength":"3"},model:{value:(_vm.pageSize),callback:function ($$v) {_vm.pageSize=_vm._n($$v)},expression:"pageSize"}})],1)],1)]),_c('md-button',{on:{"click":_vm.fetch}},[_vm._v("Fetch")]),_c('md-button',{staticClass:"md-accent",attrs:{"disabled":!_vm.deleteEnabled},on:{"click":function($event){_vm.showDialog = true}}},[_vm._v("Delete")]),_c('h3',[_vm._v(_vm._s(_vm.treeData.length)+" packages")]),_c('Tree',{ref:"my-tree-ref",attrs:{"id":"my-tree-id","custom-options":_vm.treeOptions,"custom-styles":_vm.treeStyles,"nodes":_vm.treeData}}),(_vm.getCheckedVersionsByPackage())?_c('div',{staticClass:"md-layout md-gutter"},[_c('md-dialog',{attrs:{"md-active":_vm.showDialog},on:{"update:mdActive":function($event){_vm.showDialog=$event},"update:md-active":function($event){_vm.showDialog=$event}}},[_c('md-dialog-title',[_vm._v("Are you absolutely sure?")]),_c('md-content',{staticClass:"md-scrollbar"},[_c('span',{staticStyle:{"padding":"0px 24px","color":"rgb(255,0,0)"}},[_vm._v(" The following packages will be deleted and will no longer be accessible. ")]),_vm._l((Object.entries(_vm.getCheckedVersionsByPackage())),function(ref){
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"11a305aa-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=4d61f2d0&
+var Appvue_type_template_id_4d61f2d0_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('div',{staticClass:"md-layout md-gutter"},[_c('div',{staticClass:"md-layout-item"},[_c('md-field',[_c('label',[_vm._v("organization")]),_c('md-input',{model:{value:(_vm.githubInfo.organization),callback:function ($$v) {_vm.$set(_vm.githubInfo, "organization", $$v)},expression:"githubInfo.organization"}})],1)],1),_c('div',{staticClass:"md-layout-item"},[_c('md-field',[_c('label',[_vm._v("repository")]),_c('md-input',{model:{value:(_vm.githubInfo.repository),callback:function ($$v) {_vm.$set(_vm.githubInfo, "repository", $$v)},expression:"githubInfo.repository"}})],1)],1),_c('div',{staticClass:"md-layout-item"},[_c('md-field',[_c('label',[_vm._v("token")]),_c('md-input',{attrs:{"type":"password"},model:{value:(_vm.githubInfo.token),callback:function ($$v) {_vm.$set(_vm.githubInfo, "token", $$v)},expression:"githubInfo.token"}})],1)],1),_c('div',{staticClass:"md-layout-item"},[_c('md-field',[_c('label',[_vm._v("Page size")]),_c('md-input',{attrs:{"type":"number","maxlength":"3"},model:{value:(_vm.pageSize),callback:function ($$v) {_vm.pageSize=_vm._n($$v)},expression:"pageSize"}})],1)],1)]),_c('md-button',{on:{"click":_vm.fetch}},[_vm._v("Fetch")]),_c('md-button',{attrs:{"disabled":_vm.treeData.length === 0},on:{"click":_vm.expandAllNodes}},[_vm._v("Expand all")]),_c('md-button',{staticClass:"md-accent",attrs:{"disabled":!_vm.deleteEnabled},on:{"click":function($event){_vm.showDialog = true}}},[_vm._v("Delete")]),_c('h3',[_vm._v(_vm._s(_vm.treeData.length)+" packages")]),_c('Tree',{ref:"my-tree-ref",attrs:{"id":"my-tree-id","custom-options":_vm.treeOptions,"custom-styles":_vm.treeStyles,"nodes":_vm.treeData}}),(_vm.getCheckedVersionsByPackage())?_c('div',{staticClass:"md-layout md-gutter"},[_c('md-dialog',{attrs:{"md-active":_vm.showDialog},on:{"update:mdActive":function($event){_vm.showDialog=$event},"update:md-active":function($event){_vm.showDialog=$event}}},[_c('md-dialog-title',[_vm._v("Are you absolutely sure?")]),_c('md-content',{staticClass:"md-scrollbar"},[_c('span',{staticStyle:{"padding":"0px 24px","color":"rgb(255,0,0)"}},[_vm._v(" The following packages will be deleted and will no longer be accessible. ")]),_vm._l((Object.entries(_vm.getCheckedVersionsByPackage())),function(ref){
 var packageName = ref[0];
 var versions = ref[1];
-return _c('md-list',{key:packageName},[_c('md-subheader',[_vm._v(_vm._s(packageName))]),_vm._l((versions),function(version){return _c('md-list-item',{key:version.id},[_c('span',{staticClass:"md-list-item-text"},[_vm._v(_vm._s(version.version))])])})],2)})],2),_c('div',{staticClass:"md-layout md-gutter md-alignment-center-right"},[_c('div',{staticClass:"md-layout-item"},[_c('md-button',{staticClass:"md-primary",on:{"click":function($event){_vm.showDialog = false}}},[_vm._v("Cancel")])],1),_c('div',{staticClass:"md-layout-item"},[_c('md-button',{staticClass:"md-primary md-raised",on:{"click":_vm.onConfirm}},[_vm._v("Confirm")])],1)])],1)],1):_vm._e()],1)}
+return _c('md-list',{key:packageName},[_c('md-subheader',[_vm._v(_vm._s(packageName))]),_vm._l((versions),function(version){return _c('md-list-item',{key:version.id},[_c('span',{staticClass:"md-list-item-text"},[_vm._v(_vm._s(version.version))])])})],2)})],2),_c('div',{staticClass:"md-layout md-gutter md-alignment-center-right"},[_c('div',{staticClass:"md-layout-item md-size-25"}),_c('div',{staticClass:"md-layout-item md-size-25"}),_c('div',{staticClass:"md-layout-item md-size-25"},[_c('md-button',{staticClass:"md-primary",on:{"click":function($event){_vm.showDialog = false}}},[_vm._v("Cancel")])],1),_c('div',{staticClass:"md-layout-item md-size-25"},[_c('md-button',{staticClass:"md-primary md-raised",on:{"click":_vm.onConfirm}},[_vm._v("Confirm")])],1)])],1)],1):_vm._e()],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=34a429e7&
+// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=4d61f2d0&
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js + 1 modules
 var objectSpread2 = __webpack_require__("5530");
@@ -524,6 +524,9 @@ function _deletePackage() {
 //
 //
 //
+//
+//
+//
 
  // import {getPackages, getPackageVersions, deletePackageVersions} from "./utils/graphql.mock";
 
@@ -563,6 +566,11 @@ var TREE_REF = 'my-tree-ref';
             state: true,
             fn: this.onNodeChecked
           }
+        },
+        addNode: {
+          state: true,
+          fn: this.checkSimilarVersions,
+          appearOnHover: true
         }
       };
     },
@@ -572,6 +580,12 @@ var TREE_REF = 'my-tree-ref';
           height: 'auto',
           overflowY: 'visible',
           display: 'inline-block'
+        },
+        addNode: {
+          class: 'fa fa-flag-checkered',
+          style: {
+            color: '#070909'
+          }
         },
         selectIcon: {
           class: 'fa fa-plus',
@@ -637,7 +651,7 @@ var TREE_REF = 'my-tree-ref';
                   break;
                 }
 
-                console.log("Please fill in the form");
+                alert("Please fill in the form");
                 return _context2.abrupt("return");
 
               case 3:
@@ -956,6 +970,54 @@ var TREE_REF = 'my-tree-ref';
     },
     findNode: function findNode(nodeId) {
       return this.findRec(this.treeData, nodeId);
+    },
+    expandAllNodes: function expandAllNodes() {
+      var _iterator6 = Object(createForOfIteratorHelper["a" /* default */])(this.treeData),
+          _step6;
+
+      try {
+        for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
+          var n = _step6.value;
+          this.$refs[TREE_REF].expandNode(n.id, 1);
+          this.onNodeExpended(n.id);
+        }
+      } catch (err) {
+        _iterator6.e(err);
+      } finally {
+        _iterator6.f();
+      }
+    },
+    checkSimilarVersions: function checkSimilarVersions(node) {
+      var _iterator7 = Object(createForOfIteratorHelper["a" /* default */])(this.treeData),
+          _step7;
+
+      try {
+        for (_iterator7.s(); !(_step7 = _iterator7.n()).done;) {
+          var n = _step7.value;
+
+          var _iterator8 = Object(createForOfIteratorHelper["a" /* default */])(n.nodes),
+              _step8;
+
+          try {
+            for (_iterator8.s(); !(_step8 = _iterator8.n()).done;) {
+              var vNode = _step8.value;
+
+              if (vNode.name === node.name) {
+                this.$refs[TREE_REF].checkNode(vNode.id, 2);
+                this.deleteEnabled = true;
+              }
+            }
+          } catch (err) {
+            _iterator8.e(err);
+          } finally {
+            _iterator8.f();
+          }
+        }
+      } catch (err) {
+        _iterator7.e(err);
+      } finally {
+        _iterator7.f();
+      }
     }
   }
 });
@@ -978,7 +1040,7 @@ var componentNormalizer = __webpack_require__("2877");
 
 var component = Object(componentNormalizer["a" /* default */])(
   src_Appvue_type_script_lang_js_,
-  Appvue_type_template_id_34a429e7_render,
+  Appvue_type_template_id_4d61f2d0_render,
   staticRenderFns,
   false,
   null,
@@ -1026,4 +1088,4 @@ new vue_runtime_esm["default"]({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app.3a2bdd03.js.map
+//# sourceMappingURL=app.4407dd70.js.map

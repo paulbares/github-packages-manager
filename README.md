@@ -26,3 +26,9 @@ Select the versions you want to delete and click _Delete_. A confirmation modal 
 <img width="948" alt="Screen Shot 2021-06-22 at 12 09 09 PM" src="https://user-images.githubusercontent.com/5783183/122888405-e6ecf500-d352-11eb-985a-337b947b3173.png">
 
 Package versions will be immediately deleted once _Confirm_ is clicked.
+
+The icon :checkered_flag: next to a version enables you to select all similar versions (having the same name) for each package.
+
+## Demo
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/5783183/123049621-ce431480-d410-11eb-89ee-6c913398a004.gif)
+

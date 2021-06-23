@@ -27,6 +27,7 @@
       </div>
     </div>
     <md-button @click="fetch">Fetch</md-button>
+    <md-button @click="expandAllNodes" :disabled="treeData.length === 0">Expand all</md-button>
     <md-button class="md-accent" @click="showDialog = true" :disabled="!deleteEnabled">Delete</md-button>
 
     <h3>{{ treeData.length }} packages</h3>
@@ -51,10 +52,12 @@
           </md-list>
         </md-content>
         <div class="md-layout md-gutter md-alignment-center-right">
-          <div class="md-layout-item">
+          <div class="md-layout-item md-size-25"></div>
+          <div class="md-layout-item md-size-25"></div>
+          <div class="md-layout-item md-size-25">
             <md-button class="md-primary" @click="showDialog = false">Cancel</md-button>
           </div>
-          <div class="md-layout-item">
+          <div class="md-layout-item md-size-25">
             <md-button class="md-primary md-raised" @click="onConfirm">Confirm</md-button>
           </div>
         </div>
@@ -106,6 +109,7 @@ export default {
             fn: this.onNodeChecked,
           },
         },
+        addNode: { state: true, fn: this.checkSimilarVersions, appearOnHover: true },
       }
     },
     treeStyles() {
@@ -114,6 +118,12 @@ export default {
           height: 'auto',
           overflowY: 'visible',
           display: 'inline-block',
+        },
+        addNode: {
+          class: 'fa fa-flag-checkered',
+          style: {
+            color: '#070909'
+          }
         },
         selectIcon: {
           class: 'fa fa-plus',
@@ -145,7 +155,7 @@ export default {
     },
     async initTree() {
       if(!Object.entries(this.githubInfo).every(e => e[1])){
-        console.log("Please fill in the form")
+        alert("Please fill in the form")
         return
       }
 
@@ -301,6 +311,22 @@ export default {
     },
     findNode(nodeId) {
       return this.findRec(this.treeData, nodeId)
+    },
+    expandAllNodes() {
+      for (const n of this.treeData) {
+        this.$refs[TREE_REF].expandNode(n.id, 1)
+        this.onNodeExpended(n.id)
+      }
+    },
+    checkSimilarVersions(node) {
+      for (const n of this.treeData) {
+        for (const vNode of n.nodes) {
+          if (vNode.name === node.name) {
+            this.$refs[TREE_REF].checkNode(vNode.id, 2)
+            this.deleteEnabled = true
+          }
+        }
+      }
     },
   }
 }

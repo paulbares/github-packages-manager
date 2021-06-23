@@ -6,6 +6,8 @@ github-packages-manager is a client-side application to manage GitHub packages. 
 ](https://docs.github.com/en/graphql) to fetch and display the list of packages and [GitHub GraphQL Preview API](https://docs.github.com/en/enterprise-server@3.0/packages/learn-github-packages/deleting-a-package#deleting-a-version-of-a-private-package-with-graphql)
 for deletion. Because of it was made for my own needs only, it has a very limited set of functionalities.
 
+It may be very useful for Java projects managed with maven having multi modules hence multiple Java artifacts. 
+
 ## Create a personal access token
 To communicate with the GraphQL server, you'll need a token with the right scopes. Generate a new one by following those instructions https://docs.github.com/en/graphql/guides/forming-calls-with-graphql#authenticating-with-graphql
 

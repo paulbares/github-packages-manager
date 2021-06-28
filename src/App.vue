@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <a href="https://github.com/paulbares/github-packages-manager">GitHub repository</a>
     <div class="md-layout md-gutter">
       <div class="md-layout-item">
         <md-field>
@@ -141,21 +142,23 @@ export default {
     },
   },
   beforeMount() {
-    this.initTree()
+    this.initTree(false)
   },
   methods: {
     fetch() {
-      this.initTree()
+      this.initTree(true)
     },
     async onConfirm () {
       this.showDialog = false
       this.deleteEnabled = false
       await this.deleteCheckedPackages()
-      await this.initTree()
+      await this.initTree(true)
     },
-    async initTree() {
+    async initTree(displayAlert) {
       if(!Object.entries(this.githubInfo).every(e => e[1])){
-        alert("Please fill in the form")
+        if (displayAlert) {
+          alert("Please fill in the form")
+        }
         return
       }
 
